@@ -13,6 +13,10 @@ class Node {
       this->name = name;
     }
 
+    // Note:
+    // We have to declare a least one virtual method to make this class polymorphic
+    // If no others are suitable, the destructor
+    // ref: https://stackoverflow.com/questions/15114093/getting-source-type-is-not-polymorphic-when-trying-to-use-dynamic-cast
     virtual ~Node() {}
 
     string getName() {
